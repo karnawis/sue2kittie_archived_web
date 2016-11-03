@@ -10,19 +10,15 @@
     <meta name="description" content="">
     <meta name="author" content="">
 
-    <title>Bare - Start Bootstrap Template</title>
+    <title>Sura's Protoype</title>
 
     <!-- Bootstrap Core CSS -->
     <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="http://fonts.googleapis.com/css?family=Cookie" rel="stylesheet" type="text/css">
     <link rel="stylesheet" type="text/css" href="css/style.css">
+    <link href="https://fonts.googleapis.com/css?family=Indie+Flower" rel="stylesheet">
 
-    <!-- Custom CSS -->
-    <style>
-    body {
-        padding-top: 70px;
-        /* Required padding for .navbar-fixed-top. Remove if using .navbar-static-top. Change if height of navigation changes. */
-    }
-    </style>
+    <script id="facebook-jssdk" src="//connect.facebook.net/en_US/sdk.js#xfbml=1&amp;version=v2.0"></script>
 
     <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
@@ -46,7 +42,7 @@
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
                 </button>
-                <a class="navbar-brand" href="#">Home</a>
+                <a class="navbar-brand" href="#">Sura.me</a>
             </div>
             <!-- Collect the nav links, forms, and other content for toggling -->
             <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
@@ -70,36 +66,80 @@
         <!-- /.container -->
     </nav>
 
-    <div class="container-fluid fluid-container">
-        <img src="img/toronto-train.jpg" width="100%" alt="toronto train" />
-    </div>
+
+<section id="home" class="jumbotron banner-main">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-4">
+            <h1>Hello, welcome to my webpage!</h1>
+          </div>
+        </div>
+      </div>
+</section>
+
 <section id="about">
-    <h1>About section</h1>
-    
+    <div class="container-fluid">
+        <div class="row">
+        <div class="col-md-4">
+          <h2>Education and Career</h2>
+          <p>Hi my name is Sura. I’m a front-end developer. 
+            I live in Toronto. My passion for art and technology have defined my career and education goals. 
+            I obtained a degree in Computer Science. One of the reasons I like technology is because it connects
+            and enable people to share their ideas instantly. However, as much as I value technology I don't rely completely on it. 
+            I prefer face to face interaction over online chats :D. <!-- Saif Study-->
+          </p>
+          <p>You can learn more about my porfessional profile on Linkedin page here »
+            <a class="btn btn-default" href="http://ca.linkedin.com/in/surait/" target="blank" role="button">Linkedin</a>
+          </p>
+          <h2>Volunteer Work</h2>
+          <p>I’m a passionate individual and I am a committed to making positive impact on the community through voluntary work. 
+            Besides pursuing my career in technology, I have enjoyed volunteering with different NGO's such as United Nations, Salvation Army, World Food Program and recently Sick Kids.
+            I also enjoy running for a cause like the Terry Fox Marathon for cancer research.
+          </p>
+        </div>
+        <div class="col-md-4">
+          <h2>My Passion for Art</h2>
+          <p>I’m a self taught artist. In my spare time I love to paint and draw. I have been enjoying exploring art since the age of 5. 
+            I still remember as a child the joy I felt to see people paint with colors, it distracted me from the hardship of undergoing war and civil unrest when I lived in Iraq.
+            I like to paint about my dreams, my emotions and I encourage everyone to do it, to try and explore the artist in you.
+            <br>Let life inspire you.
+            </p>
+            <p>You can explore my facebook page here »
+              <a class="btn btn-default" href="https://facebook.com/followyourheartart/" target="blank" role="button">Follow Your Passion</a>
+            </p>
+
+            <!--Sick kids face painting and art battle-->
+        </div>
+        <div class="col-md-4">
+            <h2>A Heart Warming Quote for you every time you visit:</h2>
+            <blockquote><span id="quote">"The biggest adventure you can ever take is to live the life of your dreams." ~Oprah Winfrey</span><!--<blockquote-->
+            </blockquote>
+            <p><img src="img/sura-picture.jpg" alt="Sura's picture" width="100%"></p>
+        </div>
+      </div>
+    </div>
 </section>
 
 <section id="portfolio">
-    <!-- Page Content -->
-    <div class="container">
-
+    <div id="art" class="container">
         <div class="row">
             <div class="col-lg-12 text-center">
-                <h1>A bootstrap Portfolio</h1>
-                <p class="lead">Complete with pre-defined file paths that you won't have to change!!</p>
-                <ul class="list-unstyled">
-                    <li>Bootstrap v3.3.7</li>
-                    <li>jQuery v1.11.1</li>
-                </ul>
+                <p class="lead">Art</p>
             </div>
         </div>
-        <!-- /.row -->
-
     </div>
-    <!-- /.container -->
+    <div id="projects" class="container">
+        <div class="row">
+            <div class="col-lg-12 text-center">
+                <p class="lead">Projects</p>
+            </div>
+        </div>
+    </div>
 </section>
 
 <section id="contact">
     <h1>Section Contact</h1>
+    <p> <a href="mailto:skarnawi@gmail.com">sk@sura.me</a></p>
     <div id="wrapper" class="toggled">
 
         <!-- Sidebar -->
@@ -152,48 +192,59 @@
 
     </div>
 </section>
-
-        <!-- jQuery -->
-    <script src="js/jquery.js"></script>
-
-    <!-- Bootstrap Core JavaScript -->
-    <script src="js/bootstrap.min.js"></script>
-
-    <!-- Scrolling Nav JavaScript -->
-    <script src="js/jquery.easing.min.js"></script>
-    
-    <script src="js/scrolling-nav.js"></script>
-
-    <script type="text/javascript">
-
-        
-        $("#menu-toggle").click(function(e) {
-            e.preventDefault();
-            $("#wrapper").toggleClass("toggled");
+ <footer class="banner-main-footer">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-4">
+            <p>Copyright &copy; 2016 Sura Karnawi</p>
+            <!--Facebook like button-->
+            <div id="fb-root"></div>
+              <script>(function(d, s, id) {
+                var js, fjs = d.getElementsByTagName(s)[0];
+                if (d.getElementById(id)) return;
+                js = d.createElement(s); js.id = id;
+                js.src = "//connect.facebook.net/en_US/sdk.js#xfbml=1&version=v2.0";
+                fjs.parentNode.insertBefore(js, fjs);
+              }(document, 'script', 'facebook-jssdk'));</script>
+              <div class="fb-like" data-href="https://www.facebook.com/followyourheartart?ref=hl" data-width="100" data-layout="standard" data-action="like" data-show-faces="true" data-share="true"></div>
+         </div>
+         <div class="col-md-8 nav">
+            <a href="https://www.facebook.com/followyourheartart/" target="_blank"><span class="glyphicon glyphicon-heart-empty"></span> facebook</a> <a href="https://plus.google.com/u/0/107854673355077388333/" target="_blank"><span class="glyphicon glyphicon-envelope"></span> google+</a> <a href="http://ca.linkedin.com/in/surait/" target="_blank"><span class="glyphicon glyphicon-envelope"></span> linkedin</a> <a href="https://twitter.com/#!/sura_kittie/" target="_blank"><span class="glyphicon glyphicon-envelope"></span> twitter</a> <a href="http://www.pinterest.com/skarnawi/" target="_blank"><span class="glyphicon glyphicon-envelope"></span> pintrest</a> <a href="http://instagram.com/surakittie" target="_blank"><span class="glyphicon glyphicon-envelope"></span> instagram
+         </div>
+        </div>
+      </div>
+    </footer>  
+<!-- jQuery -->
+<script src="js/jquery.js"></script>
+<!-- Bootstrap Core JavaScript -->
+<script src="js/bootstrap.min.js"></script>
+<!-- Scrolling Nav JavaScript -->
+<script src="js/jquery.easing.min.js"></script>
+<script src="js/scrolling-nav.js"></script>
+<script type="text/javascript">
+    $("#menu-toggle").click(function(e) {
+        e.preventDefault();
+        $("#wrapper").toggleClass("toggled");
+    });
+    //jQuery to collapse the navbar on scroll
+    $(window).scroll(function() {
+        if ($(".navbar").offset().top > 50) {
+            $(".navbar-fixed-top").addClass("top-nav-collapse");
+        } else {
+            $(".navbar-fixed-top").removeClass("top-nav-collapse");
+        }
+    });
+    //jQuery for page scrolling feature - requires jQuery Easing plugin
+    $(function() {
+        $('a.page-scroll').bind('click', function(event) {
+            var $anchor = $(this);
+            $('html, body').stop().animate({
+                scrollTop: $($anchor.attr('href')).offset().top
+            }, 1500, 'easeInOutExpo');
+            event.preventDefault();
         });
-    
-
-        //jQuery to collapse the navbar on scroll
-        $(window).scroll(function() {
-            if ($(".navbar").offset().top > 50) {
-                $(".navbar-fixed-top").addClass("top-nav-collapse");
-            } else {
-                $(".navbar-fixed-top").removeClass("top-nav-collapse");
-            }
-        });
-
-        //jQuery for page scrolling feature - requires jQuery Easing plugin
-        $(function() {
-            $('a.page-scroll').bind('click', function(event) {
-                var $anchor = $(this);
-                $('html, body').stop().animate({
-                    scrollTop: $($anchor.attr('href')).offset().top
-                }, 1500, 'easeInOutExpo');
-                event.preventDefault();
-            });
-        });
-
-    </script>
+    });
+</script>
 <!--https://blackrockdigital.github.io/startbootstrap-creative/-->
 
 </body>
