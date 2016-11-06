@@ -4,26 +4,41 @@
    Date: Sweet November 2014
    ========================================================================== */
 
- body {
+
+/* Layout */
+body {
     overflow-x: hidden;
     padding-top: 50px;
-    /* Required padding for .navbar-fixed-top. Remove if using .navbar-static-top. Change if height of navigation changes. */
 }
 
-/* Toggle Styles */
+section {
+    margin-bottom: 30px;
+}
+
+/* Header  */
 
 .banner-main {
-    padding-top: 148px;
+    padding-top: 18px;
     background-image: url(../img/banner-bg.jpeg);
-    background-position-x: 50%;
+    background-position: 50% -66px;
     background-size: cover;
+    color: white;
+    min-height: 511px;
 }
 
-.navbar-inverse .navbar-nav>li>a, footer .nav a {
+.navbar-inverse .navbar-nav>li>a {
     color: #9d9d9d;
     font-size: 19px;
 }
+.navbar-inverse .navbar-nav>li>a:hover,
+footer .nav a,
+footer i {
+    color: #ff5252;
+}
 
+footer a, footer i{
+   font-size: 25px;
+}
 
 /* Typography */
 
@@ -32,6 +47,16 @@ h1, h2, h3, h4, h5, h6, .nav > li >a, .navbar-brand {
     font-family: 'Indie Flower', cursive;
     color: #ff5252;
 }
+
+
+
+
+
+/* ---- Masonry---- */
+
+.grid-item { width: 200px;  border: 3px solid #FFF; }
+.grid-item--width2 { width: 300px; }
+.grid-item img{width: 100%;}
 
 
 /* Style for sidebar wrapper */
