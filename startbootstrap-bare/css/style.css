@@ -79,6 +79,11 @@ h1, h2, h3, h4, h5, h6, .nav > li >a, .navbar-brand {
     color: #ff5252;
 }
 
+#quote {
+    font-style: italic;
+    color: #707F70;
+}
+
 section#contact {
     background: #ff5252;
     color: white;
