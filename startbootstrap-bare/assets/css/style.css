@@ -1,0 +1,127 @@
+/* ==========================================================================
+   Name: Main Stylesheet
+   Author: Sura Karnawi
+   Date: Sweet November 2014
+   ========================================================================== */
+
+
+/* Layout */
+body {
+    overflow-x: hidden;
+    padding-top: 50px;
+}
+
+section {
+    margin-bottom: 30px;
+}
+
+.top-space{
+    margin-top: 15px;
+}
+
+/* Header  */
+
+.banner-main {
+    padding-top: 18px;
+    background-image: url(../img/banner-bg.jpg);
+    background-position: 50% -66px;
+    background-size: cover;
+    color: white;
+    min-height: 200px;
+}
+
+.navbar-inverse .navbar-nav>li>a {
+    color: #9d9d9d;
+    font-size: 19px;
+}
+.navbar-inverse .navbar-nav>li>a:hover{
+    color: #ff5252;
+}
+
+.navbar-inverse .navbar-nav>li>a {
+    color: #9d9d9d;
+    font-size: 19px;
+    -webkit-transition: all 0.5s ease;
+    -moz-transition: all 0.5s ease;
+    -o-transition: all 0.5s ease;
+    transition: all 0.5s ease;
+}
+.navbar-inverse .navbar-nav>.active>a,
+.navbar-inverse .navbar-nav>.active>a:focus,
+.navbar-inverse .navbar-nav>.active>a:hover {
+    color: #fff;
+    background-color: #080808;
+    font-size: 20px;
+}
+
+
+footer a{
+    margin: 10px;
+    font-size: 35px;
+    -webkit-transition: all 0.5s ease;
+    -moz-transition: all 0.5s ease;
+    -o-transition: all 0.5s ease;
+    transition: all 0.5s ease;
+    
+}
+footer i{
+    color: #ff5252;
+}
+footer a i:hover {
+    color: #337ab7;
+}
+
+/* Typography */
+
+h1, h2, h3, h4, h5, h6, .nav > li >a, .navbar-brand {
+    font-family: 'Cookie', cursive;
+    font-family: 'Indie Flower', cursive;
+    color: #ff5252;
+}
+
+#quote {
+    font-style: italic;
+    color: #707F70;
+}
+
+section#contact {
+    background: #ff5252;
+    color: white;
+}
+section#contact a, section#contact h1{
+    color: #FFF;
+}
+
+/* ---- Masonry---- */
+.grid-item { width: 200px;  border: 3px solid #FFF; }
+.grid-item--width2 { width: 300px; }
+.grid-item img{width: 100%;}
+
+
+
+
+/*==========  Mobile First Method  ==========*/
+
+/* Custom, iPhone Retina */ 
+@media only screen and (max-width : 320px) {
+
+}
+
+/* Extra Small Devices, Phones */ 
+@media only screen and (max-width : 480px) {
+    .grid-item{
+    }
+}
+
+/* Small Devices, Tablets */
+@media only screen and (min-width : 768px) {
+
+}
+
+/* Medium Devices, Desktops */
+@media only screen and (min-width : 992px) {
+    .banner-main {
+        min-height: 511px;
+    }
+}
+   
