@@ -19,7 +19,7 @@
     <link href="http://fonts.googleapis.com/css?family=Cookie" rel="stylesheet" type="text/css">
     <link href="https://fonts.googleapis.com/css?family=Indie+Flower" rel="stylesheet">
     <link rel="stylesheet" type="text/css" href="assets/css/style.css">
-    <link rel="stylesheet" type="text/css" href="assets/plugin/colorbox/example2/colorbox.css">
+    <link rel="stylesheet" type="text/css" href="assets/plugin/colorbox/colorbox.css">
 
     <script id="facebook-jssdk" src="//connect.facebook.net/en_US/sdk.js#xfbml=1&amp;version=v2.0"></script>
 
@@ -275,7 +275,13 @@
         });
 
         //colorbox
-        $(".group1").colorbox({rel:'group1'});
+	  $(".group1").colorbox({
+	      "escKey"	: true,
+	      "transition":	"elastic",
+	      "scalePhotos" : "true",
+	      "maxWidth" : "90%"
+	  });
+
     });
 </script>
 <!--Google Analytics-->
