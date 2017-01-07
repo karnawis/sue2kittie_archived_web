@@ -31,27 +31,26 @@
         #cboxTitle{position:absolute; top:-60px; left:0; color:#000; font-size: 200%; color: #6f6c6c;}
         #cboxCurrent{position:absolute; top:-22px; right:205px; text-indent:-9999px;}
 
-       
+
 
         /* avoid outlines on :active (mouseclick), but preserve outlines on :focus (tabbed navigating) */
         #cboxPrevious:active, #cboxNext:active, #cboxSlideshow:active, #cboxClose:active {outline:0;}
 
          /* these elements are buttons, and may need to have additional styles reset to avoid unwanted base styles */
         #cboxPrevious, #cboxNext, #cboxClose {
-            border:0; 
-            padding:0; 
-            margin:0; 
-            overflow:visible; 
-            text-indent:-9999px; 
-            width:50px; 
-            height:50px; 
+            border:0;
+            padding:0;
+            margin:0;
+            overflow:visible;
+            text-indent:-9999px;
+            width:50px;
+            height:50px;
             position:absolute;
-            top:50%; 
+            top:50%;
             background-position: center;
             background-color: transparent;/*background:url(images/controls.png) no-repeat 0 0;*/
             background-repeat: no-repeat;
             background-position: center;
-            border:1px solid red;
         }
         #cboxPrevious{
             background-image:url(images/previous.png);
