@@ -82,7 +82,11 @@ footer a i:hover {
 }
 
 /* Typography */
-
+.jumbotron p, .jumbotron h6 {
+  background: #222;
+  opacity: 0.8;
+  padding: 0 9px;
+}
 h1, h2, h3, h4, h5, h6, .nav > li >a, .navbar-brand {
     font-family: 'Cookie', cursive;
     font-family: 'Indie Flower', cursive;
