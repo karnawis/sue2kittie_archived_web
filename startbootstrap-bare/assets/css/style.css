@@ -1,11 +1,19 @@
 /* ==========================================================================
    Name: Main Stylesheet
    Author: Sura Karnawi
-   Date: Sweet November 2014
+   Date: Sweet MArch 2017
    ========================================================================== */
+/*
+Color
+*/
+.color-green { color: #1F914D; }
+.bg-color-green { background-color: #1F914D; }
+.color-yellow { color: #FEC43B; }
+.bg-color-yellow { background-color: #FEC43B; }
 
-
-/* Layout */
+/* 
+Layout 
+*/
 body {
     overflow-x: hidden;
     padding-top: 50px;
@@ -82,24 +90,43 @@ footer a i:hover {
 }
 
 /* Typography */
-
+.jumbotron p, .jumbotron h6 {
+  background: #222;
+  opacity: 0.8;
+  padding: 0 9px;
+}
 h1, h2, h3, h4, h5, h6, .nav > li >a, .navbar-brand {
     font-family: 'Cookie', cursive;
     font-family: 'Indie Flower', cursive;
     color: #ff5252;
 }
-
+#contact h2 { color: #FFF; }
 #quote {
     font-style: italic;
     color: #707F70;
 }
-
+/* Contact section */
+.error ul li {
+    list-style: none;
+}
 section#contact {
     background: #ff5252;
     color: white;
 }
 section#contact a, section#contact h1{
     color: #FFF;
+}
+section#contact .btn-success {
+    padding: 12px 60px;
+    border-color: #4cae4c;
+}
+.help-block.text-danger {
+    background-color: #FEC43B; 
+    color: black;
+    border-radius: 4px;
+}
+.help-block ul {
+    padding: 2px 12px;
 }
 
 /* ---- Masonry---- */
