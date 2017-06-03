@@ -9,7 +9,7 @@
     <meta name="description" content="Sura Karnawi is a frontend developer and Artist"/>
     <meta name="robot" content="index, follow, all"/>
     <meta name="keywords" content="sura karnawi, front-end developer london, web developer London, Toronto, web developer, Manchester, manchester, England, Sura Karnawi a Torontonian web developer,web design, web development, beautiful design, frontend developer, design, art, front-end developer, sura design, art therapy,  art, atisitic, beautiful art, unhcr, volunteer, passion"/>
-    <title>Sura</title>
+    <title>Sura's Web Design</title>
     <link rel="shortcut icon" href="assets/img/favicon.ico" >
     <link rel="stylesheet" type="text/css" href="assets/fonts/font-awesome-4.7.0/css/font-awesome.min.css">
     <!--https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css-->
@@ -81,12 +81,12 @@
     </nav>
 
 
-<section id="home" class="jumbotron">
+<section id="home" class="jumbotron bg-color-red">
       <div class="container">
         <div class="row">
-          <div class="col-xs-4">
-            <h1>Happy for your visit!</h1>
-            <p>I'm Web designer & developer freelancer</p>
+          <div class="col-xs-6">
+            <h1>Hi there and welcome</h1>
+            <p>I'm Sura a Web designer & developer freelancer</p>
           </div>
         </div>
       </div>
@@ -116,15 +116,19 @@
         <p><img src="assets/img/sura-logo-house.jpg" width="100%" alt="sura creativity logo house"></p>
       </div>
     </div>
+  </div>
+</section>
+<section class="bg-color-red">
+  <div class="container">
     <div class="row">
       <div class="col-md-12">
-          <h3>A Heart Warming Quote for you every time you visit:</h3>
-          <blockquote><span id="quote">"The biggest adventure you can ever take is to live the life of your dreams." ~Oprah Winfrey</span><!--<blockquote-->
+          <h3 class="color-white ">A Heart Warming Quote for you every time you visit:</h3>
+          <blockquote class="color-white"><span id="quote">"The biggest adventure you can ever take is to live the life of your dreams." ~Oprah Winfrey</span><!--<blockquote-->
           </blockquote>
       </div>
     </div>
-  </section>
-
+  </div>
+</section>
 <section id="about">
     <div class="container-fluid">
         <div class="row">
@@ -337,7 +341,7 @@
     });
     //jQuery for page scrolling feature - requires jQuery Easing plugin
     $(function() {
-        $('a.page-scroll').bind('click', function(event) {
+        $('a').bind('click', function(event) {
             var $anchor = $(this);
             $('html, body').stop().animate({
                 scrollTop: $($anchor.attr('href')).offset().top
