@@ -31,7 +31,6 @@ section {
 
 /* Header  */
 .jumbotron {
-  display: none;
   background-attachment: fixed;
   background-image: url(../img/sura-pic-vintage.jpg);
   background-repeat: no-repeat;
@@ -163,12 +162,12 @@ section#contact .btn-success {
     .jumbotron h1 {
       font-size: 20px;
     }
-    .jumbotron h2 {
+    .jumbotron p {
       font-size: 16px;
     }
     .jumbotron {
-      display: none;
-      background-position-x: 200%;
+      background-position-x: 110%;
+      background-size: 75%;
       min-height: 100px;
       padding: 0;
     }
