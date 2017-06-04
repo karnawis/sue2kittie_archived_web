@@ -160,14 +160,18 @@ section#contact .btn-success {
 /* Extra Small Devices, Phones */
 @media only screen and (max-width : 480px) {
     .jumbotron h1 {
-      font-size: 30px;
-    }
-    .jumbotron h2 {
       font-size: 20px;
     }
+    .jumbotron h2 {
+      font-size: 16px;
+    }
     .jumbotron {
+      background-position-x: 200%;
       min-height: 100px;
       padding: 0;
+    }
+    .sticky-banner {
+      display: none;
     }
 }
 
