@@ -175,7 +175,7 @@ section#contact .btn-success {
     .sticky-banner {
       display: none;
     }
-    .grid-item { width: 150px; }
+    .grid-item { width: 120px; }
     .grid-item--width2 { width: 200px; }
 }
 
