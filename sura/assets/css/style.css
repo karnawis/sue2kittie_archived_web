@@ -25,6 +25,10 @@ section {
     margin-bottom: 30px;
 }
 
+section, foorer, header {
+  overflow: hidden;
+}
+
 .top-space{
     margin-top: 15px;
 }
@@ -84,7 +88,6 @@ section {
   height: 40px;
   background-size: 100%;
 }
-
 footer a{
   margin: 10px;
   font-size: 35px;
