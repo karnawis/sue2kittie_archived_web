@@ -176,10 +176,10 @@ section#contact .btn-success {
       font-size: 16px;
     }
     .jumbotron {
-      background-position-x: 98px;
+      background-position-x: 170%;
       background-size: 75%;
       min-height: 100px;
-      min-height: auto
+      min-height: auto;
       padding: 0;
     }
     .sticky-banner {
