@@ -53,7 +53,12 @@ section, foorer, header {
   background-size: 14px 14px;
   background-attachment: fixed;
 }
-
+.jumbotron .row{
+  display: flex;
+}
+.jumbotron .row .col-xs-7 {
+  flex: 1;
+}
 .sticky-banner {
   padding-top: 18px;
   background-image: url(../img/banner-bg.jpg);
@@ -183,12 +188,12 @@ section#contact .btn-success {
 
 /* Extra Small Devices, Phones */
 @media only screen and (max-width : 480px) {
-    .jumbotron .container .row .col-xs-7{
-      background-color: #ff5252;
+    .jumbotron {
+      background: #fff;
+      border-bottom: 2px solid #ff5252;
     }
     .jumbotron h1 {
       font-size: 20px;
-      color: #fff;
     }
     .jumbotron p {
       font-size: 16px;
