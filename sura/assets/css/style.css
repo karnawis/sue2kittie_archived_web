@@ -8,10 +8,12 @@ Color
 */
 .color-white { color: #fff; }
 .color-green { color: #1F914D; }
+.color-yellow { color: #FEC43B; }
+.color-red { color: #ff5252; }
 .bg-color-red { background-color: #ff5252; }
 .bg-color-green { background-color: #1F914D; }
-.color-yellow { color: #FEC43B; }
 .bg-color-yellow { background-color: #FEC43B; }
+.bg-color-white { background-color: #fff; }
 
 /*
 Layout
@@ -43,6 +45,13 @@ section, foorer, header {
   min-height: 300px;
   background-position: right;
   background-position-y: 30px;
+  /* dotted backgroun */
+  background: radial-gradient(#ff5252 20%,transparent 21%),-webkit-radial-gradient(#ff5252 20%,transparent 21%),0 0;
+  background-position: 0 0,7px 7px;
+  background-origin: padding-box;
+  background-clip: border-box;
+  background-size: 14px 14px;
+  background-attachment: fixed;
 }
 
 .sticky-banner {
@@ -53,7 +62,7 @@ section, foorer, header {
   background-repeat: no-repeat;
   background-size: cover;
   color: white;
-  min-height: 250px;
+  min-height: 350px;
   position: relative;
   background-attachment: fixed;
   background-position: left;
@@ -127,7 +136,9 @@ h1, h2, h3, h4, h5, h6, .nav > li >a, .navbar-brand {
   font-size: 23px;
   color: #000;
 }
-
+h1.color-red, p.color-red, h2.color-red{
+  color: #ff5252;
+}
 #contact h2 { color: #FFF; }
 #quote {
     font-style: italic;
@@ -172,16 +183,17 @@ section#contact .btn-success {
 
 /* Extra Small Devices, Phones */
 @media only screen and (max-width : 480px) {
+    .jumbotron .container .row .col-xs-7{
+      background-color: #ff5252;
+    }
     .jumbotron h1 {
       font-size: 20px;
+      color: #fff;
     }
     .jumbotron p {
       font-size: 16px;
     }
     .jumbotron {
-      background-position-x: 170%;
-      background-size: 75%;
-      min-height: 100px;
       min-height: auto;
       padding: 0;
     }
