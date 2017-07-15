@@ -120,6 +120,16 @@ footer a i:hover {
   color: #337ab7;
 }
 
+footer ul {
+  text-align: center;
+  list-style: none;
+}
+footer ul li {
+  padding: 0 10px;
+  display: inline-block;
+
+}
+
 /* Typography */
 h1, h2, h3, h4, h5, h6, .nav > li >a, .navbar-brand {
     font-family: 'Cookie', cursive;
