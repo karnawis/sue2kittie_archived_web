@@ -38,11 +38,17 @@ section, foorer, header {
 /* Header  */
 .jumbotron {
   overflow: hidden;
-  background-attachment: fixed;
-  background-image: url(../img/sura-pic-vintage.jpg);
   background-repeat: no-repeat;
   background-size: 50%;
   min-height: 300px;
+}
+.jumbotron .row{
+  display: flex;
+}
+.jumbotron .row .col-xs-7 {
+  flex: 1;
+}
+.bg-dotted {
   background-position: right;
   background-position-y: 30px;
   /* dotted backgroun */
@@ -52,12 +58,6 @@ section, foorer, header {
   background-clip: border-box;
   background-size: 14px 14px;
   background-attachment: fixed;
-}
-.jumbotron .row{
-  display: flex;
-}
-.jumbotron .row .col-xs-7 {
-  flex: 1;
 }
 .sticky-banner {
   padding-top: 18px;
