@@ -6,6 +6,9 @@
 /*
 Color
 */
+*, a{
+  outline: none;
+}
 .color-white { color: #fff; }
 .color-green { color: #1F914D; }
 .color-yellow { color: #FEC43B; }
@@ -36,12 +39,7 @@ section, foorer, header {
 }
 
 /* Header  */
-.jumbotron {
-  overflow: hidden;
-  background-repeat: no-repeat;
-  background-size: 50%;
-  min-height: 300px;
-}
+
 .jumbotron .row{
   display: flex;
 }
@@ -72,9 +70,22 @@ section, foorer, header {
   background-attachment: fixed;
   background-position: left;
 }
-
+.navbar-inverse {
+  background-color: #fff;
+  border-color: #fff;
+}
+.navbar-inverse .navbar-toggle:focus,
+.navbar-inverse .navbar-toggle:hover ,
+.navbar-inverse .navbar-toggle{
+  border-color: #FFF;
+  background-color: #FFF;
+}
+.navbar-inverse .navbar-toggle .icon-bar {
+  background-color: #ff5252;
+  border-color: #ff5252;
+}
 .navbar-inverse .navbar-nav>li>a {
-  color: #9d9d9d;
+  color: #ff5252;
   font-size: 19px;
 }
 .navbar-inverse .navbar-nav>li>a:hover{
@@ -82,7 +93,7 @@ section, foorer, header {
 }
 
 .navbar-inverse .navbar-nav>li>a {
-  color: #9d9d9d;
+  color: #ff5252;
   font-size: 19px;
   -webkit-transition: all 0.5s ease;
   -moz-transition: all 0.5s ease;
@@ -92,9 +103,25 @@ section, foorer, header {
 .navbar-inverse .navbar-nav>.active>a,
 .navbar-inverse .navbar-nav>.active>a:focus,
 .navbar-inverse .navbar-nav>.active>a:hover {
-  color: #fff;
-  background-color: #080808;
   font-size: 20px;
+  color: #ff5252;
+  background-color: #FFF;
+}
+/* drop down */
+@media (max-width: 767px){
+  .navbar-inverse .navbar-collapse {
+    background-color: #ff5252;
+    border-color: #ff5252;
+  }
+  .navbar-inverse .navbar-nav li>a{
+    color: #FFF;
+  }
+  .navbar-inverse .navbar-collapse li>a:focus,
+  .navbar-inverse .navbar-collapse li>a:hover{
+        outline: none;
+        color: #FFF;
+  }
+
 }
 .navbar-brand{
   background: url('../img/sura-logo.png') no-repeat;
@@ -151,6 +178,14 @@ h1, h2, h3, h4, h5, h6, .nav > li >a, .navbar-brand {
   font-size: 23px;
   color: #000;
 }
+p {
+  font-size: 16px;
+  font-weight: 200;
+}
+blockquote {
+    font-size: 18.5px;
+    font-weight: 200;
+}
 h1.color-red, p.color-red, h2.color-red{
   color: #ff5252;
 }
@@ -195,11 +230,24 @@ section#contact .btn-success {
 @media only screen and (max-width : 320px) {
 
 }
+.jumbotron {
+  overflow: hidden;
+  background-position: right;
+  background-position-y: 30px;
 
+
+  background-attachment: fixed;
+  background-image: url(../img/sura-pic-vintage.jpg);
+  background-repeat: no-repeat;
+  background-size: 50%;
+  min-height: 300px;
+}
 /* Extra Small Devices, Phones */
 @media only screen and (max-width : 480px) {
     .jumbotron {
-      background: #fff;
+      background-size: 77%;
+      background-position-x: 213%;
+      background-position-y: 47px;
       border-bottom: 2px solid #ff5252;
     }
     .jumbotron h1 {
@@ -221,6 +269,10 @@ section#contact .btn-success {
 
 /* Small Devices, Tablets */
 @media only screen and (max-width : 768px)  and (min-width : 480px){
+  .jumbotron {
+    background-size: 64%;
+    background-position-x: 140%;
+  }
   .jumbotron h1 {
     font-size: 40px;
   }

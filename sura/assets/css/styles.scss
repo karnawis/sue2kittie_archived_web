@@ -1,0 +1,337 @@
+/* ==========================================================================
+   Name: Main Stylesheet
+   Author: Sura Karnawi
+   Date: Sweet May 2017
+   ========================================================================== */
+/*
+Color
+*/
+
+*, a{
+  outline: none;
+}
+$color-red: #ff5252;
+$color-white: #fff;
+
+.color-white { color: $color-white; }
+.color-green { color: #1F914D; }
+.color-yellow { color: #FEC43B; }
+.color-red { color: $color-red; }
+.bg-color-red { background-color: #ff5252; }
+.bg-color-green { background-color: #1F914D; }
+.bg-color-yellow { background-color: #FEC43B; }
+.bg-color-white { background-color: #fff; }
+
+/* Mixins */
+@mixin transition($what: all, $time: 0.2s, $how: ease-in-out) {
+  -webkit-transition: $what $time $how;
+  -moz-transition:    $what $time $how;
+  -ms-transition:     $what $time $how;
+  -o-transition:      $what $time $how;
+  transition:         $what $time $how;
+}
+
+/*
+Layout
+*/
+body {
+    overflow-x: hidden;
+    padding-top: 50px;
+}
+
+section {
+    margin-bottom: 30px;
+}
+
+section,footer, header {
+  overflow: hidden;
+}
+
+.top-space{
+    margin-top: 15px;
+}
+
+/* Header  */
+
+.jumbotron .row{
+  display: flex;
+  .col-xs-7 {
+    flex: 1;
+  }
+}
+.bg-dotted {
+  background-position: right;
+  background-position-y: 30px;
+  /* dotted backgroun */
+  background: radial-gradient($color-red 20%,transparent 21%),-webkit-radial-gradient($color-red 20%,transparent 21%),0 0;
+  background-position: 0 0,7px 7px;
+  background-origin: padding-box;
+  background-clip: border-box;
+  background-size: 14px 14px;
+  background-attachment: fixed;
+}
+.sticky-banner {
+  padding-top: 18px;
+  background-image: url(../img/banner-bg.jpg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  color: white;
+  min-height: 350px;
+  position: relative;
+  background-attachment: fixed;
+  background-position: left;
+}
+
+.navbar-inverse {
+  background-color: $color-white;
+  border-color: $color-white;
+  .navbar-toggle{
+    border: none;
+    &:hover,&:focus{
+      border-color: $color-white;
+      background-color: $color-white;
+    }
+    .icon-bar {
+      border-radius: 1px;
+      background-color: $color-red;
+      border-color: $color-red;
+      display: block;
+      height: 5px;
+      margin-top: 5px;
+      width: 45px;
+    }
+  }
+  .navbar-nav {
+    li{
+      a {
+      color: $color-red;
+      font-size: 19px;
+      @include transition(all,0.2s,ease-out);
+      &:hover, &:focus{
+        color: $color-red;
+      }
+    }
+    &.active>a,
+    &.active>a:focus,
+    &.active>a:hover{
+        font-size: 20px;
+        color: $color-red;
+        background-color: transparent;
+        border-bottom: 1px solid $color-red;
+      }
+    }
+  }
+}
+
+/* drop down */
+@media (max-width: 767px){
+  .navbar-inverse{
+    .navbar-collapse {
+      background-color: $color-red;
+      border-color: $color-red;
+      li {
+          a{
+          color: $color-white;
+          &:focus,
+          &:hover{
+            outline: none;
+            color: $color-white;
+          }
+        }
+        &.active>a,
+        &.active>a:focus,
+        &.active>a:hover{
+            font-size: 22px;
+            color: $color-white;
+            background-color: transparent;
+            border-bottom: 0px solid $color-white;
+          }
+      }
+    }
+    .navbar-nav{
+      margin-left: 10px;
+    }
+  }
+}
+
+.navbar-brand{
+  //background: url('../img/sura-logo.png') no-repeat;
+  //background-size: 100%;
+  background-color: $color-white;
+  height: 40px;
+  margin: 10px;
+  padding: 10px;
+  position: absolute;
+  width: 200px;
+  h1 {
+    font-size: 20px;
+    margin:0;
+    text-align: center;
+  }
+}
+.navbar-nav {
+    float: left;
+    margin: 0;
+    margin-left: 192px;
+}
+.cards {
+
+}
+footer {
+    a{
+    margin: 10px;
+    font-size: 35px;
+    -webkit-transition: all 0.5s ease;
+    -moz-transition: all 0.5s ease;
+    -o-transition: all 0.5s ease;
+    transition: all 0.5s ease;
+    i{
+      color: $color-red;
+      &:hover {
+        color: #337ab7;
+      }
+    }
+  }
+  ul {
+    text-align: center;
+    list-style: none;
+    li {
+      padding: 0 10px;
+      display: inline-block;
+    }
+  }
+}
+
+/* Typography */
+h1, h2, h3, h4, h5, h6, .nav > li >a, .navbar-brand {
+    font-family: 'Cookie', cursive;
+    font-family: 'Indie Flower', cursive;
+    color: $color-red;
+}
+.cards h3 {
+  text-align: center;
+}
+.cards p {
+  text-align: justify;
+}
+.jumbotron h1 {
+  font-size: 50px;
+  color : $color-white;
+}
+.jumbotron p {
+  padding: 0 9px;
+  font-size: 23px;
+  color: #000;
+}
+p {
+  font-size: 16px;
+  font-weight: 200;
+}
+blockquote {
+    font-size: 18.5px;
+    font-weight: 200;
+}
+h1.color-red, p.color-red, h2.color-red{
+  color: $color-red;
+}
+#contact h2 { color: $color-white; }
+#quote {
+    font-style: italic;
+    color: #000;
+}
+/* Contact section */
+.error ul li {
+    list-style: none;
+}
+section#contact {
+  background: $color-red;
+  color: white;
+  a, h1{
+    color: $color-white;
+  }
+ .btn-success {
+    padding: 12px 60px;
+    border-color: #4cae4c;
+  }
+}
+.help-block.text-danger {
+    background-color: #FEC43B;
+    color: black;
+    border-radius: 4px;
+}
+.help-block ul {
+    padding: 2px 12px;
+}
+
+/* ---- Masonry---- */
+.grid-item { width: 200px;  border: 3px solid $color-white; }
+.grid-item--width2 { width: 300px; }
+.grid-item img{width: 100%;}
+
+
+/*==========  Mobile First Method  ==========*/
+
+/* Custom, iPhone Retina */
+@media only screen and (max-width : 320px) {
+
+}
+.jumbotron {
+  overflow: hidden;
+  background-position: right;
+  background-position-y: 30px;
+
+
+  background-attachment: fixed;
+  background-image: url(../img/sura-pic-vintage.jpg);
+  background-repeat: no-repeat;
+  background-size: 50%;
+  min-height: 300px;
+}
+/* Extra Small Devices, Phones */
+@media only screen and (max-width : 480px) {
+    .jumbotron {
+      background-size: 77%;
+      background-position-x: 213%;
+      background-position-y: 47px;
+      border-bottom: 2px solid $color-red;
+    }
+    .jumbotron h1 {
+      font-size: 20px;
+    }
+    .jumbotron p {
+      font-size: 16px;
+    }
+    .jumbotron {
+      min-height: auto;
+      padding: 0;
+    }
+    .sticky-banner {
+      display: none;
+    }
+    .grid-item { width: 135px; }
+    .grid-item--width2 { width: 200px; }
+}
+
+/* Small Devices, Tablets */
+@media only screen and (max-width : 768px)  and (min-width : 480px){
+  .jumbotron {
+    background-size: 64%;
+    background-position-x: 140%;
+  }
+  .jumbotron h1 {
+    font-size: 40px;
+  }
+  .jumbotron p {
+    font-size: 20px;
+  }
+  .jumbotron {
+    min-height: 240px;
+    padding-bottom: 10px;
+  }
+}
+
+/* Medium Devices, Desktops */
+@media only screen and (min-width : 992px) {
+}
