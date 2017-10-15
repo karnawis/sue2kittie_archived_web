@@ -159,6 +159,29 @@ section, footer, header {
   max-width: 200px;
   width: 36%; }
 
+.cards {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  -ms-flex-pack: center;
+  justify-content: center; }
+  .cards h3 {
+    text-align: center;
+    color: #fff; }
+  .cards p {
+    text-align: justify; }
+  .cards .card {
+    background: #ff5252;
+    border-radius: 15px;
+    margin: 20px;
+    padding: 15px; }
+    @media (min-width: 768px) {
+      .cards .card {
+        width: 23%;
+        margin: 1%;
+        padding: 10px; } }
+
 footer a {
   margin: 10px;
   font-size: 35px;
@@ -183,16 +206,9 @@ h1, h2, h3, h4, h5, h6, .nav > li > a, .navbar-brand {
   font-family: 'Indie Flower', cursive;
   color: #ff5252; }
 
-.cards h3 {
-  text-align: center; }
-
-.cards p {
-  text-align: justify; }
-
 .jumbotron h1 {
   font-size: 50px;
   color: #fff; }
-
 .jumbotron p {
   padding: 0 9px;
   font-size: 23px;
@@ -265,18 +281,15 @@ section#contact {
   .jumbotron {
     background-size: 77%;
     background-position-x: 213%;
-    background-position-y: 47px;
-    border-bottom: 2px solid #ff5252; }
-
-  .jumbotron h1 {
-    font-size: 20px; }
-
-  .jumbotron p {
-    font-size: 16px; }
-
-  .jumbotron {
+    background-position-y: 24px;
+    border-bottom: 2px solid #ff5252;
     min-height: auto;
     padding: 0; }
+    .jumbotron h1 {
+      font-size: 20px; }
+    .jumbotron p {
+      font-size: 14px;
+      margin-bottom: 14px; }
 
   .sticky-banner {
     display: none; }

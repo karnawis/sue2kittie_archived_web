@@ -189,7 +189,31 @@ section,footer, header {
   width: 36%;
 }
 .cards {
-
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  -ms-flex-pack: center;
+  justify-content: center;
+  h3 {
+   text-align: center;
+   color: $color-white;
+  }
+  p {
+    //color: $color-white;
+    text-align: justify;
+  }
+  .card {
+    background: $color-red;
+    border-radius: 15px;
+    margin: 20px;
+    padding: 15px;
+    @media (min-width: 768px) {
+      width: 23%;
+      margin: 1%;
+      padding: 10px;
+    }
+  }
 }
 footer {
     a{
@@ -222,20 +246,17 @@ h1, h2, h3, h4, h5, h6, .nav > li >a, .navbar-brand {
     font-family: 'Indie Flower', cursive;
     color: $color-red;
 }
-.cards h3 {
-  text-align: center;
-}
-.cards p {
-  text-align: justify;
-}
-.jumbotron h1 {
-  font-size: 50px;
-  color : $color-white;
-}
-.jumbotron p {
-  padding: 0 9px;
-  font-size: 23px;
-  color: #000;
+
+.jumbotron {
+  h1 {
+    font-size: 50px;
+    color : $color-white;
+  }
+ p {
+    padding: 0 9px;
+    font-size: 23px;
+    color: #000;
+  }
 }
 p {
   font-size: 16px;
@@ -306,16 +327,15 @@ section#contact {
     .jumbotron {
       background-size: 77%;
       background-position-x: 213%;
-      background-position-y: 47px;
+      background-position-y: 24px;
       border-bottom: 2px solid $color-red;
+      h1 {
+        font-size: 20px;
+      }
+     p {
+      font-size: 14px;
+      margin-bottom: 14px;
     }
-    .jumbotron h1 {
-      font-size: 20px;
-    }
-    .jumbotron p {
-      font-size: 16px;
-    }
-    .jumbotron {
       min-height: auto;
       padding: 0;
     }
