@@ -39,7 +39,7 @@ Layout
 */
 body {
   overflow-x: hidden;
-  padding-top: 50px; }
+  padding-top: 55px; }
 
 section {
   margin-bottom: 30px; }
@@ -117,18 +117,25 @@ section, footer, header {
   .navbar-inverse .navbar-collapse {
     background-color: #ff5252;
     border-color: #ff5252; }
-    .navbar-inverse .navbar-collapse li a {
-      color: #fff; }
-      .navbar-inverse .navbar-collapse li a:focus, .navbar-inverse .navbar-collapse li a:hover {
-        outline: none;
-        color: #fff; }
-    .navbar-inverse .navbar-collapse li.active > a, .navbar-inverse .navbar-collapse li.active > a:focus, .navbar-inverse .navbar-collapse li.active > a:hover {
-      font-size: 22px;
-      color: #fff;
-      background-color: transparent;
-      border-bottom: 0px solid #fff; }
-  .navbar-inverse .navbar-nav {
-    margin-left: 10px; } }
+    .navbar-inverse .navbar-collapse ul.nav.navbar-nav {
+      margin-left: 10px;
+      width: 100%; }
+      .navbar-inverse .navbar-collapse ul.nav.navbar-nav li {
+        width: 100%; }
+        .navbar-inverse .navbar-collapse ul.nav.navbar-nav li a {
+          color: #fff;
+          opacity: 0.7;
+          width: 100%; }
+          .navbar-inverse .navbar-collapse ul.nav.navbar-nav li a:focus, .navbar-inverse .navbar-collapse ul.nav.navbar-nav li a:hover {
+            color: #fff;
+            outline: none;
+            opacity: 1; }
+        .navbar-inverse .navbar-collapse ul.nav.navbar-nav li.active > a, .navbar-inverse .navbar-collapse ul.nav.navbar-nav li.active > a:focus, .navbar-inverse .navbar-collapse ul.nav.navbar-nav li.active > a:hover {
+          background-color: transparent;
+          border-bottom: 0px solid #fff;
+          color: #fff;
+          font-size: 22px;
+          opacity: 1; } }
 .navbar-brand {
   background-color: #fff;
   height: 40px;
@@ -145,6 +152,12 @@ section, footer, header {
   float: left;
   margin: 0;
   margin-left: 192px; }
+
+#floating-house {
+  display: block;
+  float: right;
+  max-width: 200px;
+  width: 36%; }
 
 footer a {
   margin: 10px;
