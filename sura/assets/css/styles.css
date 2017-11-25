@@ -50,6 +50,14 @@ section, footer, header {
 .top-space {
   margin-top: 15px; }
 
+.flex {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  -ms-flex-pack: center;
+  justify-content: center; }
+
 /* Header  */
 .jumbotron .row {
   display: flex; }
@@ -159,28 +167,42 @@ section, footer, header {
   max-width: 200px;
   width: 36%; }
 
-.cards {
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-wrap: wrap;
-  flex-wrap: wrap;
-  -ms-flex-pack: center;
-  justify-content: center; }
-  .cards h3 {
-    text-align: center;
-    color: #fff; }
-  .cards p {
-    text-align: justify; }
-  .cards .card {
-    background: #ff5252;
+.cards h3 {
+  text-align: center;
+  color: #fff; }
+.cards p {
+  text-align: justify; }
+.cards .card {
+  background-color: #ff5252;
+  border-radius: 15px;
+  margin: 20px;
+  padding: 5px; }
+  .cards .card .icon-bg {
+    border: 1px solid #ff7878;
     border-radius: 15px;
-    margin: 20px;
-    padding: 15px; }
-    @media (min-width: 768px) {
-      .cards .card {
-        width: 23%;
-        margin: 1%;
-        padding: 10px; } }
+    padding: 10px; }
+    .cards .card .icon-bg.icon-spade {
+      background: url(../img/icons/icon-spade.png), url(../img/icons/icon-spade.png); }
+    .cards .card .icon-bg.icon-diamond {
+      background: url(../img/icons/icon-diamond.png), url(../img/icons/icon-diamond.png); }
+    .cards .card .icon-bg.icon-club {
+      background: url(../img/icons/icon-club.png), url(../img/icons/icon-club.png); }
+    .cards .card .icon-bg.icon-heart {
+      background: url(../img/icons/icon-heart.png), url(../img/icons/icon-heart.png); }
+    .cards .card .icon-bg.icon-spade, .cards .card .icon-bg.icon-diamond, .cards .card .icon-bg.icon-club, .cards .card .icon-bg.icon-heart {
+      background-position: 2% 2%, 98% 98%;
+      background-repeat: no-repeat;
+      background-size: 19px; }
+  @media (min-width: 768px) {
+    .cards .card {
+      width: 23%;
+      margin: 1%;
+      padding: 10px; } }
+
+.spade-card {
+  background: url(../img/icons/icon-card-club.png) no-repeat;
+  background-size: 5%;
+  background-position: 98% 15px; }
 
 footer a {
   margin: 10px;
